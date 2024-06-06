@@ -23,7 +23,6 @@ try {
     $mail->isHTML(true);
     $mail->Subject = 'Notificação de Alteração de Senha';
 
-    // Corpo do email com HTML e CSS inline
     $mail->Body = "
     <html>
     <head>

@@ -16,7 +16,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->CharSet    = PHPMailer::CHARSET_UTF8; // Definir a codificação de caracteres para UTF-8
+    $mail->CharSet    = PHPMailer::CHARSET_UTF8;
 
     $mail->setFrom('gabriel@gmail.com', 'Gabriel');
     $mail->addAddress('ellen@outlook.com', 'Ellen');

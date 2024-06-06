@@ -23,7 +23,6 @@ try {
     $mail->isHTML(true);
     $mail->Subject = 'Bem-vindo ao sistema';
 
-    // Corpo do email com HTML e CSS inline
     $mail->Body = "
     <html>
     <head>
@@ -97,14 +96,12 @@ try {
     </html>
     ";
 
-    // Corpo alternativo em texto simples
     $mail->AltBody = 'Olá Ellen, Bem-vindo ao nosso sistema! Estamos felizes em tê-lo conosco.';
 
-    // Enviar email
     $mail->send();
     echo 'A mensagem de boas-vindas foi enviada' . PHP_EOL;
 } catch (Exception $e) {
-    // Exibir mensagem de erro caso o email não possa ser enviado
+   
     echo "A mensagem não pode ser enviada. Error: {$mail->ErrorInfo}";
 }
 ?>

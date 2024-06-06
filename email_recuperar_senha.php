@@ -25,7 +25,6 @@ try {
     $mail->isHTML(true);
     $mail->Subject = 'Recuperação de Senha';
 
-    // Corpo do email com HTML e CSS inline
     $mail->Body = "
     <html>
     <head>
